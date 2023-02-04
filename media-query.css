@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+@media (max-width: 768px) {
+    #col-3, #col-4, #col-5{
+        width: 100%;
+        float: left;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .container {
+
+        height: 200px;
+        width: 700px;
+        
+        position: absolute;
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        }
+    .col-1 {
+        float: left;
+        width: 30%;        
+    }
+    .col-2{
+        float: right;
+        width: 70%;
+        padding-top: 50px;
+    }
+    #col-3, #col-4, #col-5{
+        width: 28%;
+        float: left;
+        display: grid;
+        
+    }
+    div #abo {
+        
+        height: 600px;
+        width: 700px;
+    }
+    div #cont {
+        height: 600px;
+        width: 700px;
+    }
+}
+ 
