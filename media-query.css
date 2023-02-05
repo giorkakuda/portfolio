@@ -23,7 +23,7 @@
         width: 70%;
         padding-top: 50px;
     }
-    #col-3, #col-4, #col-5, #col-6{
+    #col-3, #col-4, #col-5, #col-6, #col-7, #col-8 {
         width: 45%;
         
         float: left;
@@ -43,6 +43,7 @@
         margin-top: 0px;
         margin-bottom: 20px;
         padding-left: 0px;
+        margin-left: 18px;
     }
 }
 
@@ -70,7 +71,7 @@
     }
 
 
-    #col-3, #col-4, #col-5{
+    #col-3, #col-4, #col-5, #col-6, #col-7, #col-8{
         width: 29%;
         
         float: left;
@@ -88,17 +89,36 @@
         margin-bottom: 10px;
     }
     main div h2 {
+        margin-left: 15px;
         margin-top: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
     }
     main div p {
         margin-top: 0px;
-        margin-bottom: 20px;
-        padding-left: 0px;
     }
-    #col-6 {
+    main div > p > #bt0 {
+        width: 70px;
+        margin-left: 24px;
+        margin-right: 25px;
+    }
+    main div > p > #bt1 {
+
+        margin-left: 0px;
+    }
+    #sect-1 {
+    
         width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: block;
     }
+    #sect-2 {
+    
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    
 }
     
 
