@@ -1,16 +1,7 @@
 @charset "UTF-8";
 
-/*
-@media (max-width: 768px) {
-    #col-3, #col-4, #col-5{
-        width: 100%;
-        float: left;
-    }
-
-}
-
-
-@media (min-width: 768px) {
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .container {
 
         height: 200px;
@@ -32,6 +23,98 @@
         width: 70%;
         padding-top: 50px;
     }
+    #col-3, #col-4, #col-5, #col-6{
+        width: 45%;
+        
+        float: left;
+        display: grid;
+        margin-left: 33px;
+        margin-top: 20px;   
+    }
+    div#img {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    main div h2 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    main div p {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container {
+
+        height: 200px;
+        width: 700px;
+        
+        position: absolute;
+        top: 35%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        }
+    .col-1 {
+        float: left;
+        width: 30%;        
+    }
+    .col-2{
+        float: right;
+        width: 70%;
+        padding-top: 50px;
+    }
+
+
+    #col-3, #col-4, #col-5{
+        width: 29%;
+        
+        float: left;
+        display: grid;
+        margin-left: 33px;
+        margin-top: 30px;   
+    }
+    main div {
+        display: flex;
+        width: 350px;
+        height: 450px;
+    }
+    div#img {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    main div h2 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    main div p {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+    #col-6 {
+        width: 100%;
+    }
+}
+    
+
+
+/*
+@media (max-width: 768px) {
+    #col-3, #col-4, #col-5{
+        width: 100%;
+        float: left;
+    }
+
+}
+
+
+ {
+    
     #col-3, #col-4, #col-5{
         width: 28%;
         float: left;

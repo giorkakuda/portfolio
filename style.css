@@ -119,7 +119,12 @@ main div p {
     line-height: 1.5em;
     color: darkblue;
 }
-main div > #bt1 {
+main div > p > #bt0 {
+    width: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+main div > p > #bt1 {
     width: 70px;
     margin-left: 55px;
     margin-top: 10px;
@@ -129,6 +134,7 @@ main div > #bt1 {
     
     width: 100%;
     margin-top: 20px;
+    display: block;
     
 }
 
