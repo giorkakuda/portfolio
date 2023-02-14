@@ -47,9 +47,15 @@
     
     .container-1 h2 {
         margin-top: 0px;
+        margin-right: 0px;
+        
     }
     .container-1 p {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    div#img {
+        margin-bottom: 15px;
     }
     .container-2 {
         width: 100%;
@@ -59,6 +65,10 @@
     }
     div #myself {
         height: 500px;       
+    }
+    #myself p {
+        margin-top: 10px;
+        line-height: 1.43em;
     }
     div #skills {
         height: 500px;
@@ -117,6 +127,7 @@
     }
     .container-1 h2 {
         margin-top: 0px;
+        margin-right: 0px;
     }
     .container-1 p {
         margin-bottom: 35px;
