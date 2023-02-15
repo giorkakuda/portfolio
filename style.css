@@ -44,6 +44,54 @@ nav >a:hover {
     transition-duration: 0.5s;
 
 }
+.api{
+    background-color: rgb(34, 34, 34);
+    height: 25px;
+    padding-top: 50px;
+    color: white;
+    font-weight: bold;
+    
+    font-size: 0.9em;
+    
+}
+#name{
+    margin-left: 10px;
+}
+#price{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+#change{
+    margin-left: 0px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+#name2{
+    margin-left: 0px;
+}
+#price2{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+#change2{
+    margin-left: 0px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+#name3{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+#price3{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+#change3{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: normal;
+}
+
 body {
     background-color: black
 }
@@ -197,7 +245,7 @@ div #skills > p {
     
     align-items: center;
     position: absolute;
-    top: 40%;
+    top: 48%;
     left: 50%;
    
     transition: width .3s, heigth .3s;
