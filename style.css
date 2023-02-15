@@ -46,45 +46,44 @@ nav >a:hover {
 }
 .api{
     background-color: rgb(34, 34, 34);
-    height: 25px;
-    padding-top: 50px;
+    height: 20px;
+    padding-top: 55px;
     color: white;
     font-weight: bold;
     
-    font-size: 0.9em;
+    font-size: 0.7em;
     
 }
 #name{
     margin-left: 10px;
 }
 #price{
-    margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 #change{
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
     font-weight: normal;
 }
 #name2{
-    margin-left: 0px;
+    margin-left: 5px;
 }
 #price2{
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 #change2{
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
     font-weight: normal;
 }
 #name3{
-    margin-left: 0px;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 0px;
 }
 #price3{
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 #change3{
     margin-left: 0px;
