@@ -51,7 +51,7 @@ nav >a:hover {
     color: white;
     font-weight: bold;
     
-    font-size: 0.7em;
+    font-size: 0.75em;
     
 }
 #name{
@@ -64,6 +64,7 @@ nav >a:hover {
     margin-left: 0px;
     margin-right: 0px;
     font-weight: normal;
+    font-size: 0.9em;
 }
 #name2{
     margin-left: 5px;
@@ -76,6 +77,7 @@ nav >a:hover {
     margin-left: 0px;
     margin-right: 0px;
     font-weight: normal;
+    font-size: 0.9em;
 }
 #name3{
     margin-left: 5px;
@@ -89,6 +91,7 @@ nav >a:hover {
     margin-left: 0px;
     margin-right: 0px;
     font-weight: normal;
+    font-size: 0.9em;
 }
 
 body {

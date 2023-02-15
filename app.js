@@ -35,16 +35,55 @@ function getReal() {
     document.getElementById('change3').innerHTML = parseFloat(pct3) + '%'
 
 
-   /* const dolar = real.USDBRL.bid
-    console.log(dolar)
-
-    const euro = real.EURBRL.bid
-    console.log(euro)*/
 }); 
 
+}/*
+function getDolar() {
+    let BTCBRL, USDBRL;
 
 
+    fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+.then((response) => response.json())
+.then(function(response){
+    BTCBRL = parseFloat(response.BTCBRL.bid);
+    USDBRL = parseFloat(response.USDBRL.bid);
+})
+
+.then(function() {
+    const btcUsd = BTCBRL / USDBRL;    
+    console.log(btcUsd)
+});
 
 }
+
+function getEuro() {
+    let BTCBRL, EURBRL;
+
+    fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+.then((response) => response.json())
+.then(function(response){
+    BTCBRL = parseFloat(response.BTCBRL.bid);
+    EURBRL = parseFloat(response.EURBRL.bid);
+})
+.then(function() {
+    const btcEur = BTCBRL / EURBRL;
+    console.log(btcEur)
+})
+
+}
+
+function getExd() {
+    let EURUSD;
+
+    fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
+    .then((response) => response.json())
+    .then(function(response){
+        EURUSD = response(EURBRL.bid) / response(USDBRL.bid)
+        console.log(EURUSD)
+        
+    });
+}*/
 getReal()
-    
+/*getDolar()
+getEuro()
+getExd()*/
