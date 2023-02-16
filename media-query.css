@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 320px) {
+    nav {
+        padding: 9px;
+    }
+    nav > a {
+        padding: 9px;
+        font-size: 0.9em;
+    }
+    .api{
+        height: 15px;
+        padding-top: 45px;
+        font-weight: bold;
+        
+        font-size: 0.65em;
+        
+    }
+    
+}
+
 /* tablet*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .container {

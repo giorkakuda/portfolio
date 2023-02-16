@@ -13,6 +13,8 @@ function getReal() {
 
     const pct = real.BTCBRL.pctChange
     document.getElementById('change').innerHTML = parseFloat(pct) + '%'
+    if (pct > 0){document.getElementById('change').style.color = 'green', document.getElementById('price').style.color = 'green';}
+    else {document.getElementById('change').style.color = 'red', document.getElementById('price').style.color = 'red'};
     
     /* DOLAR*/
     const nameUs = real.USDBRL.code
@@ -23,6 +25,9 @@ function getReal() {
 
     const pct2 = real.USDBRL.pctChange
     document.getElementById('change2').innerHTML = parseFloat(pct2) + '%'
+    if (pct2 > 0){document.getElementById('change2').style.color = 'green', document.getElementById('price2').style.color = 'green';}
+    else (document.getElementById('change2').style.color = 'red', document.getElementById('price2').style.color = 'red')
+
 
     /* EURO*/
     const nameEur = real.EURBRL.code
@@ -33,6 +38,8 @@ function getReal() {
 
     const pct3 = real.EURBRL.pctChange
     document.getElementById('change3').innerHTML = parseFloat(pct3) + '%'
+    if(pct3 > 0){document.getElementById('change3').style.color = 'green', document.getElementById('price3').style.color = 'green'}
+    else(document.getElementById('change3').style.color = 'red', document.getElementById('price3').style.color = 'red')
 
 
 }); 
