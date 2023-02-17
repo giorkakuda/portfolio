@@ -99,18 +99,35 @@ function getEuro() {
 
 }
 
-
 function Run1() {
     getDolar();
     getEuro();
     getExd();
 }
 
-const timerId = setInterval(Run1, 2000);
-clearInterval(timerId)
+function removeRun1() {
+    setTimeout(function(){
+        document.getElementById('price4').innerHTML = '';
+        document.getElementById('price5').innerHTML = '';
+        document.getElementById('price6').innerHTML = '';
+    }, 5000);
+}
 
 function Run2() {
     getReal();
 }
-setInterval(Run2, 5000);
+
+function removeRun2() {
+    setTimeout(function(){
+        document.getElementById('name').innerHTML = '';
+        document.getElementById('price').innerHTML = '';
+        document.getElementById('change').innerHTML = '';
+        document.getElementById('name2').innerHTML = '';
+        document.getElementById('price2').innerHTML = '';
+        document.getElementById('change2').innerHTML = '';
+        document.getElementById('name3').innerHTML = '';
+        document.getElementById('price3').innerHTML = '';
+        document.getElementById('change3').innerHTML = '';
+    }, 9000);
+}
 
