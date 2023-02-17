@@ -66,9 +66,10 @@
     }
     footer > p {
         font-size: 0.8em;
-
     }
-
+    .container {
+        top: 50%;
+    }
 }
 
 /* tablet*/

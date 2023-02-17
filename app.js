@@ -99,35 +99,48 @@ function getEuro() {
 
 }
 
+/* BTC - EUR - BTC */
 function Run1() {
     getDolar();
     getEuro();
     getExd();
-}
+  }
+  
+  function removeRun1() {
+    document.getElementById('price4').innerHTML = '';
+    document.getElementById('price5').innerHTML = '';
+    document.getElementById('price6').innerHTML = '';
+  }
 
-function removeRun1() {
-    setTimeout(function(){
-        document.getElementById('price4').innerHTML = '';
-        document.getElementById('price5').innerHTML = '';
-        document.getElementById('price6').innerHTML = '';
-    }, 5000);
-}
-
-function Run2() {
+  /* BTC - USD - EUR */  
+  function Run2() {
     getReal();
-}
-
-function removeRun2() {
-    setTimeout(function(){
-        document.getElementById('name').innerHTML = '';
-        document.getElementById('price').innerHTML = '';
-        document.getElementById('change').innerHTML = '';
-        document.getElementById('name2').innerHTML = '';
-        document.getElementById('price2').innerHTML = '';
-        document.getElementById('change2').innerHTML = '';
-        document.getElementById('name3').innerHTML = '';
-        document.getElementById('price3').innerHTML = '';
-        document.getElementById('change3').innerHTML = '';
-    }, 9000);
-}
-
+  }
+  
+  function removeRun2() {
+    document.getElementById('name').innerHTML = '';
+    document.getElementById('price').innerHTML = '';
+    document.getElementById('change').innerHTML = '';
+    document.getElementById('name2').innerHTML = '';
+    document.getElementById('price2').innerHTML = '';
+    document.getElementById('change2').innerHTML = '';
+    document.getElementById('name3').innerHTML = '';
+    document.getElementById('price3').innerHTML = '';
+    document.getElementById('change3').innerHTML = '';
+  }
+  
+  
+  function alternateRuns() {
+    setInterval(function() {
+      Run1();
+      setTimeout(removeRun1, 5000);
+      setTimeout(function() {
+        Run2();
+        setTimeout(removeRun2, 5000);
+      }, 5000);
+    }, 10000);
+  }
+  
+  Run1();
+  alternateRuns();
+  
