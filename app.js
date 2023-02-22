@@ -58,7 +58,8 @@ function getDolar() {
     const pct = response.BTCBRL.pctChange;
     
     const btcUsd = BTCBRL / USDBRL;    
-    document.getElementById('price4').innerHTML = 'BTC ' + (btcUsd).toLocaleString('en',{style:'currency',currency:'USD'})
+    document.getElementById('price4').innerHTML = '<span id="btcText">BTC</span> ' + (btcUsd).toLocaleString('en',{style:'currency',currency:'USD'})
+    document.getElementById('btcText').style.color = 'black'
     if(pct > 0){document.getElementById('price4').style.color = 'green'}
     else{document.getElementById('price4').style.color = 'red'}
 });
@@ -73,7 +74,8 @@ function getExd() {
     .then((response) => response.json())
     .then(function(response){
         EURUSD = response['EURBRL'].bid / response['USDBRL'].bid;
-        document.getElementById('price5').innerHTML = 'EUR '+(EURUSD).toLocaleString('en',{style:'currency',currency:'USD'})
+        document.getElementById('price5').innerHTML = '<span id="eurText">EUR</span> '+(EURUSD).toLocaleString('en',{style:'currency',currency:'USD'})
+        document.getElementById('eurText').style.color = 'black'
         if('USDBRL' > 'EURBRL') {document.getElementById('price5').style.color = 'green'}
         else{document.getElementById('price5').style.color = 'red'}
         
@@ -92,7 +94,8 @@ function getEuro() {
     const pct = response.BTCBRL.pctChange;
 
     const btcEur = BTCBRL / EURBRL;
-    document.getElementById('price6').innerHTML = 'BTC '+(btcEur).toLocaleString('en',{style:'currency', currency: 'EUR'});
+    document.getElementById('price6').innerHTML = '<span id="btcText2">BTC</span> '+(btcEur).toLocaleString('en',{style:'currency', currency: 'EUR'});
+    document.getElementById('btcText2').style.color = 'black'
     if (pct > 0){document.getElementById('price6').style.color = 'green'}
     else{document.getElementById('price6').style.color = 'red'}
 })
