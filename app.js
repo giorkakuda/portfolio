@@ -147,3 +147,27 @@ function Run1() {
   Run1();
   alternateRuns();
   
+
+  function getIndex() {
+
+    fetch ('https://api.alternative.me/fng/')
+
+    .then (function(response) { 
+      return response.json()
+    })
+    .then(function(data){
+      //console.log(data)
+    
+    const number = data.data[0].value
+    document.getElementById('value').innerHTML=(number)
+    
+    const status = data.data[0].value_classification
+    document.getElementById('status').innerHTML=(status)
+
+
+  }) 
+
+
+
+  }
+  getIndex()
