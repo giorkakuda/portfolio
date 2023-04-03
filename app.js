@@ -164,6 +164,18 @@ function Run1() {
     const status = data.data[0].value_classification
     document.getElementById('status').innerHTML=(status)
 
+    if (number <= 24){
+      document.getElementById('graph').style.background='rgb(234, 76, 56)'
+    } else if (number <= 49){
+      document.getElementById('graph').style.background= 'rgb(167, 99, 106)'
+    } else if (number <= 74){
+      document.getElementById('graph').style.background= 'rgb(101, 118, 155)'
+    } else {
+      document.getElementById('graph').style.background= 'rgb(26, 142, 207)'
+    }
+    number < 50 ? document.getElementById('value').style.color='red': document.getElementById('value').style.color='green'
+    number < 50 ? document.getElementById('status').style.color='red': document.getElementById('status').style.color='green'
+
 
   }) 
 

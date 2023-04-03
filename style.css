@@ -107,26 +107,39 @@ nav >a:hover {
 }
 .fng{
     background-color:white;
-    height: 40px;
+    height: 25px;
     font-size: 0.9em;
+    padding-top: 5px;
+    padding-bottom: 0px;
+   
     
 }
-#p1{
-    margin-left: 10px;
-    text-align: center;
+
+#value{
+    font-size: 1.2em;
     font-weight: bold;
-    word-spacing: 25px;
+    background-color: white;
+    border-radius: 20px;
+
+    line-height: 5px;
+    padding: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-#p2{
-    margin-left: 10px;
-    
+#status{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
 #graph{
     background: linear-gradient(to right, rgb(234, 76, 56), rgb(26, 142, 207));
-    border-radius: 5px;
-    margin-left: 8px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 0px;
     height: 20px;
-    width: 280px;
+    width: 310px;
+    font-weight: bold;
+    padding-left: 15px;
 }
 
 body {
