@@ -12,12 +12,12 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
         }
            
-        div { 
+        .item { 
             width: 350px;
             height: 300px;
 
             margin: auto;
-            margin-top: 10px;
+            margin-top: 30px;
         
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
@@ -25,6 +25,7 @@
         .pic{
             width: 300px;
             height: 220px;
+            margin: auto;
             margin-bottom:40px;
             position: relative;
             top: 20px;
@@ -54,22 +55,63 @@
                     transition-duration: 0.5s;
                     }
         }
+        #back {
+            background-color:  black;
+            color: white;
+            margin-top: 40px;
+            
+            &:hover{
+                    background-color:  rgb(0, 191, 255);
+                    color: darkblue; 
+                    transition-duration: 0.5s;
+                    }
+        }
+        /* tablet */
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            .container {      
+                margin-top: 30px;           
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                justify-items: center;
+            }
+
+            .item {
+                text-align: center;
+                }
+        }
+        /* laptop */
+        @media screen and (min-width: 992px){
+            .container {  
+                margin-top: 30px;              
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                justify-items: center;
+            }
+
+            .item {
+                text-align: center;
+                }
+        }
     </style>
 </head>
 <body>
-    <div>
-        <div class="pic"><img src="photos/certificate03.jpg" alt=""></div>
-        <p><a href="https://www.cloudskillsboost.google/public_profiles/b4a56311-8e77-4578-b5b1-3d78078bb1ab" target="blank">Badges</a></p>
-    </div>
-    <div>
-        <div class="pic"><img src="photos/certificate02.jpg" alt=""></div>
-        <p><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4748760875GC" target="blank">Certificate ID</a></p>
-    </div>
-    <div>
-        <div class="pic"><img src="photos/certificate01.png" alt=""></div>
-        <p><a href="photos/certificate01.png" target="blank">Certificate</a></p>
+    <div class="container">
+        <div class="item">
+            <div class="pic"><img src="photos/certificate03.png" alt=""></div>
+            <p><a href="https://www.cloudskillsboost.google/public_profiles/b4a56311-8e77-4578-b5b1-3d78078bb1ab" target="blank">Badges</a></p>
+        </div>
+        <div class="item">
+            <div class="pic"><img src="photos/certificate02.jpg" alt=""></div>
+            <p><a href="https://learn.saylor.org/admin/tool/certificate/index.php?code=4748760875GC" target="blank">Certificate ID</a></p>
+        </div>
+        <div class="item">
+            <div class="pic"><img src="photos/certificate01.png" alt=""></div>
+            <p><a href="photos/certificate01.png" target="blank">Certificate</a></p>
+        </div>
     </div>
    
-    <p><a href="index.html">Back</a></p>
+    <p><a href="index.html" id="back">Back</a></p>
 </body>
 </html>
