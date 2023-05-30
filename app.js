@@ -147,7 +147,7 @@ function Run1() {
   Run1();
   alternateRuns();
   
-
+//Fear and Greed 
   function getIndex() {
 
     fetch ('https://api.alternative.me/fng/')
@@ -176,10 +176,6 @@ function Run1() {
     number < 50 ? document.getElementById('value').style.color='red': document.getElementById('value').style.color='green'
     number < 50 ? document.getElementById('status').style.color='red': document.getElementById('status').style.color='green'
 
-
   }) 
-
-
-
   }
   getIndex()
